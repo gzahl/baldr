@@ -7,7 +7,7 @@ We use this to do data analysis directly on the console and building complicated
 
 ## Examples
 
-```
+```python
 @coroutine
 def printer(send):
     while True:
