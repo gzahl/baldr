@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/gzahl/baldr.svg?branch=master)](https://travis-ci.org/gzahl/baldr)
 # Baldr - Python pipes for data analysis inspired by unix pipes
 
 Inspired by the exellent talks of [David Beazley](http://www.dabeaz.com/coroutines/) about coroutines, i implemented coroutines with the '|' pipe operator to build data analysis pipelines. Additionally to the pipe data, each pipe has its own key-value store to share a state between the pipe building blocks.
