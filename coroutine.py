@@ -57,35 +57,3 @@ def coroutine(func):
             self.cr.close()
 
     return wrapper
-
-
-# Example use
-if __name__ == '__main__':
-
-    @coroutine
-    def printer(send):
-        while True:
-            s = (yield)
-            print(s)
-            send(s)
-
-    @coroutine
-    def plus(send, a):
-        while True:
-            v = (yield)
-            send(v + a)
-
-    @coroutine
-    def plusconst(send, n):
-        while True:
-            d = (yield)
-            c = send['const']
-            send(d + c)
-
-    p = plus(3) | plus(2) | printer()
-    p.send(1)
-
-    p = plus(3) | printer() | plusconst('const') | printer()
-    p['const'] = 5
-
-    p.send(2)
