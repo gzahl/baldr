@@ -10,10 +10,8 @@ except ImportError:
 
 
 def coroutine(func):
-    #@functools.wraps(func)
     class wrapper(IterableUserDict):
         def __init__(self, *args, **kwargs):
-            super(IterableUserDict).__init__()
             self.target = None
             self.func = func
             self.data = dict()
