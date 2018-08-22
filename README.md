@@ -22,10 +22,10 @@ def plus(send, a):
         send(v + a)
 
 @coroutine
-def plusconst(send, n):
+def plusconst(send, key):
     while True:
         d = (yield)
-        c = send['const']
+        c = send[key]
         send(d + c)
 
 p = plus(3) | plus(2) | printer()

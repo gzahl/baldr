@@ -14,10 +14,10 @@ def plus(send, a):
         send(v + a)
 
 @coroutine
-def plusconst(send, n):
+def plusconst(send, key):
     while True:
         d = (yield)
-        c = send['const']
+        c = send[key]
         send(d + c)
 
 def test_plus(capfd):
