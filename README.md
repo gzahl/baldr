@@ -37,9 +37,9 @@ p['const'] = 5
 p.send(2)
 ```
 
-Additional real world examples can be found in the [Fosite](https://github.com/fositeteam/fosite) source code:
+Additional real world examples can be found in the [Fosite](https://github.com/tillense/fosite) source code:
 https://github.com/tillense/fosite/blob/master/tools/plot/coplot.py
 
 ## FAQ
 
-- Baldr is a god in [Norse mythology](https://en.wikipedia.org/wiki/Baldr) and the father of [Fosite](https://en.wikipedia.org/wiki/Forseti). Baldr was originally developed for use in [Fosite](https://github.com/fositeteam/fosite) - an astrophysical fluid dynamic code from Kiel University.
+- Baldr is a god in [Norse mythology](https://en.wikipedia.org/wiki/Baldr) and the father of [Fosite](https://en.wikipedia.org/wiki/Forseti). Baldr was originally developed for use in [Fosite](https://github.com/tillense/fosite) - an astrophysical fluid dynamic code from Kiel University.
