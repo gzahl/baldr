@@ -38,7 +38,7 @@ p.send(2)
 ```
 
 Additional real world examples can be found in the [Fosite](https://github.com/fositeteam/fosite) source code:
-https://github.com/fositeteam/fosite/blob/master/tools/plot/coplot.py
+https://github.com/tillense/fosite/blob/master/tools/plot/coplot.py
 
 ## FAQ
 
